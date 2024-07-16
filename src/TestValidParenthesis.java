@@ -2,10 +2,10 @@ import java.util.Stack;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestValidParenthesis extends Tests<String, Boolean>
-{
+public class TestValidParenthesis extends Tests<String, Boolean> {
+	
 	@Override
-	void implementTests() {
+	void testInit() {
 		mapTest.put("()", true);
 		mapTest.put("(){}[]", true);
 		mapTest.put("(]", false);
@@ -16,7 +16,7 @@ public class TestValidParenthesis extends Tests<String, Boolean>
 	}
 	
 	@Override
-	Boolean scopeTest(String t) {
+	Boolean wrapFunction(String t) {
 		return isValid(t);
 	}
 	

@@ -1,14 +1,13 @@
 
-public class TestScoreOfString extends Tests<String, Integer>
-{
+public class TestScoreOfString extends Tests<String, Integer> {
 	@Override
-	void implementTests() {
+	void testInit() {
 		mapTest.put("hello", 13);
 		mapTest.put("zaz", 50);
 	}
 
 	@Override
-	Integer scopeTest(String t) {
+	Integer wrapFunction(String t) {
 		return scoreOfString(t);
 	}
 	
