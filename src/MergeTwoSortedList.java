@@ -5,7 +5,13 @@ public class MergeTwoSortedList extends Tests<List<ListNode>, ListNode> {
 
 	@Override
 	void testInit() {
-		// TODO: Implement this method
+		List<ListNode> list;
+		
+		list = new ArrayList<>();
+		list.add(ListNode.createListNode(1, 2, 4));
+		list.add(ListNode.createListNode(1, 3, 4));
+		
+		mapTest.put(list, ListNode.createListNode(1, 1, 2, 3, 4, 4));
 	}
 
 	@Override
@@ -18,6 +24,6 @@ public class MergeTwoSortedList extends Tests<List<ListNode>, ListNode> {
 	}
 	
 	public ListNode mergeTwoLists(List<ListNode> lists) {
-		return null;
+		return new ListNode();
 	}
 }
