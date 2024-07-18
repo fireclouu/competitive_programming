@@ -11,6 +11,7 @@ Started sometime in June/July of 2024 after being engaged in technical programmi
 ### Assessments
 - [x] Complexity of input optimization / Understanding "Big O Notation"
 - [x] Data Structures and Algorithms (DSA) in real-world scenarios
+- [x] Recursion
 - [x] Standard sorting functions usage
 - [x] Benchmarking modular functions
 - [x] Extensive debugging
