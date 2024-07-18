@@ -10,19 +10,15 @@ public class TestScoreOfString extends Tests<String, Integer> {
 	}
 
 	@Override
-	Integer wrapFunction(String t) {
-		return scoreOfString(t);
-	}
-	
-	public TestScoreOfString(boolean verbose) {
-		super(verbose);
-	}
-	
-	public int scoreOfString(String s) {
+	Integer solution(String s) {
 		int score = 0;
 		for (int i = 0; i < s.length() - 1; i++) {
 			score += Math.abs(s.charAt(i) - s.charAt(i + 1));
 		}
 		return score;
+	}
+	
+	public TestScoreOfString(boolean verbose) {
+		super(verbose);
 	}
 }

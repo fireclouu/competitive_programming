@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
+import java.util.Collections;
 
 public class MergeTwoSortedList extends Tests<List<ListNode>, ListNode> {
 
@@ -41,35 +41,27 @@ public class MergeTwoSortedList extends Tests<List<ListNode>, ListNode> {
 	}
 
 	@Override
-	ListNode wrapFunction(List<ListNode> t) {
-		return mergeTwoLists(t);
-	}
-	
-	public MergeTwoSortedList(boolean verbose) {
-		super(verbose);
-	}
-	
-	public ListNode mergeTwoLists(List<ListNode> lists) {
+	ListNode solution(List<ListNode> lists) {
 		ListNode list1 = lists.get(0);
 		ListNode list2 = lists.get(1);
-		
+
 		if (list1 == null && list2 == null) return list1;
-		
+
 		// Solution 1
-		
+
 		List<Integer> nodeItems = new ArrayList<>();
 		ListNode nodeMerge = new ListNode(), pointer = nodeMerge;
-		
+
 		while (list1 != null || list2 != null) {
 			if (list1 != null) nodeItems.add(list1.val);
 			if (list2 != null) nodeItems.add(list2.val);
-			
+
 			list1 = list1 != null ? list1.next : null;
 			list2 = list2 != null ? list2.next : null;
 		}
-		
+
 		Collections.sort(nodeItems);
-		
+
 		for (int i = 0; i < nodeItems.size(); i++) {
 			pointer.val = nodeItems.get(i);
 			if (i != nodeItems.size() - 1) {
@@ -78,5 +70,9 @@ public class MergeTwoSortedList extends Tests<List<ListNode>, ListNode> {
 			}
 		}
 		return nodeMerge;
+	}
+	
+	public MergeTwoSortedList(boolean verbose) {
+		super(verbose);
 	}
 }

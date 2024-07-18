@@ -16,15 +16,7 @@ public class TestValidParenthesis extends Tests<String, Boolean> {
 	}
 	
 	@Override
-	Boolean wrapFunction(String t) {
-		return isValid(t);
-	}
-	
-	public TestValidParenthesis(boolean verbose) {
-		super(verbose);
-	}
-	
-	public boolean isValid(String s) {
+	Boolean solution(String s) {
 		if (s == null || s.isEmpty()) return false;
 		Stack<Character> pairStack = new Stack<>();
 		Map<Character, Character> pairs = new HashMap<>();
@@ -41,7 +33,11 @@ public class TestValidParenthesis extends Tests<String, Boolean> {
 				if (pairStack.size() == 0 || item != pairStack.pop()) return false;
 			}
 		}
-		
+
 		return s.length() != 1 && pairStack.size() == 0;
+	}
+	
+	public TestValidParenthesis(boolean verbose) {
+		super(verbose);
 	}
 }

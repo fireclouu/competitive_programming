@@ -1,13 +1,14 @@
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.*;
+import java.util.LinkedHashMap;
 
 public abstract class Tests<T, U> {
 	Map<T, U> mapTest = new LinkedHashMap<>();
 	private boolean verbose;
 	
 	abstract void testInit();
-	abstract U wrapFunction(T t);
+	abstract U solution(T t);
 	
 	public Tests(boolean verbose) {
 		this.verbose = verbose;
@@ -39,7 +40,7 @@ public abstract class Tests<T, U> {
 			
 			// test
 			benchmark = -System.nanoTime();
-			output = (U) wrapFunction(input);
+			output = (U) solution(input);
 			benchmark += System.nanoTime();
 			
 			benchmarkMills = (double) benchmark / 1_000_000.0f;
