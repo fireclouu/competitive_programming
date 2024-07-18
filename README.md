@@ -1,7 +1,7 @@
 # Competitive Programming Collections
-My opinionated solutions to challenges appeared in competitive programming platforms
+My opinionated solutions to challenges appeared in several competitive programming platforms
 
-#### Platforms
+### Platforms
 [![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/u/fireclouu)<br>
 [![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://hackerrank.com)
 
