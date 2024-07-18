@@ -9,15 +9,14 @@ My **opinionated solutions** to challenges appeared in several competitive progr
 Started sometime in June/July of 2024 after being engaged in technical programming interview.
 
 ### Assessments
-- [x] Complexity of input optimization, by understanding the "Big O Notation"
+- [x] Complexity of input optimization / Understanding "Big O Notation"
 - [x] Data Structures and Algorithms (DSA) in real-world scenarios
 - [x] Standard sorting functions usage
 - [x] Benchmarking modular functions
-- [x] Extensive debugging tools
+- [x] Extensive debugging
 - [x] Constraints and tests suites exposures
 - [x] Extreme considerations to "edge cases"
 - [x] Number theory
 - [x] Stacks, Maps, and Lists
-- [x] Runtime memory usages / prioritization of memory allocation
-- [x] Performance vs Resource Efficiency
-- [x] Multiple ways tackling specific set of problems, programming-wise machine dependent
+- [x] Performance vs Memory Efficiency
+- [x] Alternative solutions tackling specific set of problems within proposed algorithm
