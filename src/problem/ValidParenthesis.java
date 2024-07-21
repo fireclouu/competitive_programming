@@ -2,7 +2,7 @@ import java.util.Stack;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TestValidParenthesis extends Tests<String, Boolean> {
+public class ValidParenthesis extends Tests<String, Boolean> {
 	
 	@Override
 	void testInit() {
@@ -37,7 +37,7 @@ public class TestValidParenthesis extends Tests<String, Boolean> {
 		return s.length() != 1 && pairStack.size() == 0;
 	}
 	
-	public TestValidParenthesis(boolean verbose) {
+	public ValidParenthesis(boolean verbose) {
 		super(verbose);
 	}
 }

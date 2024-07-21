@@ -1,5 +1,5 @@
 
-public class TestScoreOfString extends Tests<String, Integer> {
+public class ScoreOfString extends Tests<String, Integer> {
 	@Override
 	void testInit() {
 		mapTest.put("hello", 13);
@@ -18,7 +18,7 @@ public class TestScoreOfString extends Tests<String, Integer> {
 		return score;
 	}
 	
-	public TestScoreOfString(boolean verbose) {
+	public ScoreOfString(boolean verbose) {
 		super(verbose);
 	}
 }
