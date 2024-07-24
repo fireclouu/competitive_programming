@@ -4,9 +4,9 @@ public class Main {
 		// new ValidParenthesis(true);
 		// new ScoreOfString(false);
 		// new MergeTwoSortedList(true);
-		// recursiveTest(500);
 		// new ReverseInteger(true);
-		new StringToIntegerAtoI(true);
+		// new StringToIntegerAtoI(true);
+		new GenerateParentheses(true);
 	}
 	
 	private static boolean doesAliceWin(String s) {
