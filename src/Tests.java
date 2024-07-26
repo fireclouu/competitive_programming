@@ -96,14 +96,24 @@ public abstract class Tests<T, U> {
 	}
 	
 	private String parseToString(Object object) {
+		final String defaultString = "[]";
+		if (object == null) return defaultString;
+		
 		String result = "";
 		
-		if (object == null) return "[]";
-		
 		if (object instanceof List) {
-			List<ListNode> nodes =  (List<ListNode>) object;
-			for (ListNode node : nodes) {
-				result += parseToString(node);
+			if (((List) object).size() == 0) return defaultString;
+			
+			Object sampleObject = ((List) object).get(0);
+			
+			if (sampleObject instanceof ListNode) {
+				List<U> nodes =  (List<U>) object;
+				for (U node : nodes) {
+					result += parseToString(node);
+				}
+			} else if (sampleObject instanceof String) {
+				List<U> items = (List<U>) object;
+					result += parseToString(items.toArray().toString());
 			}
 		} else if (object instanceof ListNode) {
 			result += ListNode.getListNodeValues((ListNode) object);
