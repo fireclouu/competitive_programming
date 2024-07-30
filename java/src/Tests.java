@@ -113,7 +113,11 @@ public abstract class Tests<T, U> {
 				}
 			} else if (sampleObject instanceof String) {
 				List<U> items = (List<U>) object;
-					result += parseToString(items.toArray().toString());
+				result += "[";
+				for (U item : items) {
+					result += parseToString(item) + ", ";
+				}
+				result += "]";
 			}
 		} else if (object instanceof ListNode) {
 			result += ListNode.getListNodeValues((ListNode) object);
