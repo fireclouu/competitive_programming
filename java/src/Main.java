@@ -6,7 +6,8 @@ public class Main {
 		// new MergeTwoSortedList(true);
 		// new ReverseInteger(true);
 		// new StringToIntegerAtoI(true);
-		new GenerateParentheses(true);
+		// new GenerateParentheses(true);
+		new CountSeniorCitizen(true);
 	}
 }
 
