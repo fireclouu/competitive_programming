@@ -7,7 +7,8 @@ public class Main {
 		// new ReverseInteger(true);
 		// new StringToIntegerAtoI(true);
 		// new GenerateParentheses(true);
-		new CountSeniorCitizen(true);
+		// new CountSeniorCitizen(true);
+		new IsSubsequence(true);
 	}
 }
 
