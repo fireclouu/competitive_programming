@@ -3,7 +3,7 @@ My **opinionated solutions** to challenges appeared in several competitive progr
 
 ### Platforms
 [![LeetCode](https://img.shields.io/badge/-LeetCode-24292E?style=for-the-badge&logo=LeetCode&logoColor=FFA116)](https://leetcode.com/u/fireclouu)<br>
-[![Codility](https://img.shields.io/badge/-Codility-FFA116?style=for-the-badge)](https://www.codility.com)<br>
+[![Codility](https://img.shields.io/badge/-Codility-FFA116?style=for-the-badge&logo=Codility)](https://www.codility.com)<br>
 [![HackerRank](https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://hackerrank.com)
 
 ### Motivation
