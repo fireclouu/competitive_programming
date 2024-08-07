@@ -18,6 +18,6 @@ Started sometime in June/July of 2024 after being engaged in technical programmi
 - [x] Constraints and tests suites exposures
 - [x] Extreme considerations to "edge cases"
 - [x] Number theory
-- [x] Stacks, Maps, and Lists
-- [x] Performance vs Memory Efficiency
+- [x] Stacks, Maps, Nodes, Trees
+- [x] Performance vs Memory use
 - [x] Alternative solutions tackling specific set of problems within proposed algorithm
