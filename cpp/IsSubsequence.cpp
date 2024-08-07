@@ -7,6 +7,7 @@ bool isSubsequence(std::string s, std::string t) {
   int satisfy = 0;
 
   for (char item : t) {
+    if (satisfy == s.size()) break;
     if (item == s[satisfy]) satisfy++;
   }
 
