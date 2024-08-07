@@ -20,4 +20,4 @@ Started sometime in June/July of 2024 after being engaged in technical programmi
 - [x] Number theory
 - [x] Stacks, Maps, Nodes, Trees
 - [x] Performance vs Memory use
-- [x] Alternative solutions tackling specific set of problems within proposed algorithm
+- [x] Benefits of alternate algorithm solution to single problem
